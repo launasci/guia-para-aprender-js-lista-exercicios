@@ -11,8 +11,10 @@
 
 // Entrada
 var entrada = 'a'
-
-// implemente aqui o condicional para retornar o boolean (true/false) com base na entrada
-var resultado = 'vogal'
-
-console.log(resultado)
+var vogal = ['a', 'e', 'i', 'o', 'u']
+var resultado = vogal.includes(entrada)
+if (resultado === true){
+    console.log('vogal')
+} else{
+    console.log('consoante')
+}

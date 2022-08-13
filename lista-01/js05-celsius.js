@@ -12,6 +12,6 @@
 var fahrenheit = 89
 
 // Altere a expressão abaixo para converter Fahrenheit em Celsius
-var celsius = 32
+var celsius = ((fahrenheit - 32) * 5/9).toFixed(0)
 
 console.log(celsius)

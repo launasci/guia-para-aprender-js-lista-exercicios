@@ -13,8 +13,20 @@
 
 // Entrada
 var texto = 'bcbduf'
+var textoDecripto=[]
+for (i of texto){
+    if (i=="z"){
+        textoDecripto +="@"
+    } else if (i=="Z"){
+        textoDecripto +="$"
+    }
+    else {
+        textoDecripto += String.fromCharCode(i.charCodeAt(0)-1)
+    }
+}
+console.log(textoDecripto)
 
 // implemente aqui uma lógica para descriptografar o texto
-var textoDecripto = 'abacate'
+// var textoDecripto = 'abacate'
 
-console.log(textoDecripto)
+// console.log(textoDecripto)

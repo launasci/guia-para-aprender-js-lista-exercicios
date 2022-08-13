@@ -12,9 +12,13 @@
  */
 
 // Entrada
-var entrada = 1
+var entrada = 0
+var diaSemana = ['','Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']
+var numSemana = diaSemana[entrada]
 
-// implemente aqui o condicional para retornar o boolean (true/false) com base na entrada
-var resultado = 'Domingo'
+if (entrada > diaSemana.length || entrada == 0){
+    console.log('Entrada inválida.')
+} else{
+    console.log(numSemana)
+}
 
-console.log(resultado)

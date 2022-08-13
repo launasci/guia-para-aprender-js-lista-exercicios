@@ -16,10 +16,16 @@
  */
 
 // Entrada
-var n1 = 'A'
+var n1 = 10
 var n2 = 40
 
-// Saída
-var resultado = '?'
+if (typeof n1 != 'number' || typeof n2 != 'number'){
+    console.log('é aceito apenas números')
+} else{
+    var soma = n1 + n2
+    console.log(soma)
+}
 
-console.log(resultado)
+// Saída
+
+

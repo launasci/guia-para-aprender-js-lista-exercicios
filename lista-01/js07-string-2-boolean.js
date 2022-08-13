@@ -8,15 +8,13 @@
  * S, SIM                    true
  * s, sim, Sim               true
  * 1                         true
- * 👍                        true
+ *👍                         true
  * n,N,J,0, espaço           false
  * qualquer outra coisa, $   false
  */
 
 // Entrada
-var entrada = 'J'
-
-// implemente aqui o condicional para retornar o boolean (true/false) com base na entrada
-var resultado = false
-
+var listatrue = ['Y', 'Yes', 'YES', 'yes', 'y', 's', 'sim', 'Sim', '1', '👍']
+var entrada = 'yes'
+var resultado = listatrue.includes(entrada)
 console.log(resultado)
